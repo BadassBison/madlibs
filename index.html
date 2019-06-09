@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Mad Libs Project</title>
+	<meta name="description" content="An interactive version of Mad Libs.">
+	<meta name="author" content="Shawn Scott">
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+	<img src="MadLibs-Logo.png" alt="MadLibs Logo">
+
+    <div id="wrapper">
+
+<!-- first object -->
+        <div id="landingPage" class="open">
+            <h2>By: <em>Shawn Scott</em></h2>
+			<div id="daughter">
+				<p>Welcome to my personal version of Mad Libs.<br><hr> Revised for my daughter, <strong>Scout</strong>.</p>
+			</div>
+
+            <!-- start button -->
+            <input type="button" id="enter" class="button" value="Get Started!" />
+        </div> <!-- #landingPage end -->
+
+<!-- second object -->
+		<form id="values">
+    			<div id="stories" class="closed">
+        			<div id="story">
+	            		<h3>Pick a story:</h3>
+
+	            		<!-- first radio button -->
+	            		<input type="radio" name="story" id="albertEinstein" />
+	            		<label for="albertEinstein">Albert Einstein</label>
+
+	            		<br />
+
+	            		<!-- second radio button -->
+	            		<input type="radio" name="story" id="bullFighting" />
+	            		<label for="bullFighting">Bull Fighting</label>
+	     			</div> <!-- #story end -->
+
+            		<!-- button after you pick your story -->
+            		<input type="button" id="storyButton" class="button" value="Continue" />
+        		</div> <!-- #stories end-->
+
+<!-- third object -->
+       		<div id="words" class="closed">
+
+				<p>Fill in the boxes below and click the submit button</p>
+
+				<!-- input boxes where the words go -->
+		        <!--0---><input placeholder="A place" 				type="text" name="words" id="aPlace" 			class="inputs 1 	closed" />
+	            <!--1---><input placeholder="Adjective #1" 			type="text" name="words" id="adjective1" 		class="inputs 1 2 	closed" />
+	            <!--2---><input placeholder="Adjective #2" 			type="text" name="words" id="adjective2" 		class="inputs 1 2 	closed" />
+	            <!--3---><input placeholder="Adjective #3" 			type="text" name="words" id="adjective3" 		class="inputs 		closed" />
+	            <!--4---><input placeholder="Adjective #4" 			type="text" name="words" id="adjective4" 		class="inputs 		closed" />
+	            <!--5---><input placeholder="Adjective #5" 			type="text" name="words" id="adjective5" 		class="inputs 		closed" />
+	            <!--6---><input placeholder="Article of clothing" 	type="text" name="words" id="artOfClothing" 	class="inputs 2 	closed" />
+	            <!--7---><input placeholder="Emotion" 				type="text" name="words" id="emotion" 			class="inputs 2 	closed" />
+	            <!--8---><input placeholder="Exclamation" 			type="text" name="words" id="exclamation" 		class="inputs 2 	closed" />
+	            <!--9---><input placeholder="Female Celebrity" 		type="text" name="words" id="femaleCelebrity" 	class="inputs 1 	closed" />
+	            <!--10--><input placeholder="Geographical Location" type="text" name="words" id="geoLocation" 		class="inputs 2 	closed" />
+	            <!--11--><input placeholder="Male Celebrity" 		type="text" name="words" id="maleCelebrity" 	class="inputs 1 	closed" />
+	            <!--12--><input placeholder="A movement" 			type="text" name="words" id="movement" 			class="inputs 2 	closed" />
+	            <!--13--><input placeholder="Noun #1" 				type="text" name="words" id="noun1" 			class="inputs 1 2 	closed" />
+	            <!--14--><input placeholder="Noun #2" 				type="text" name="words" id="noun2" 			class="inputs 1 	closed" />
+	            <!--15--><input placeholder="Noun #3" 				type="text" name="words" id="noun3" 			class="inputs 1 	closed" />
+	            <!--16--><input placeholder="Part of the body" 		type="text" name="words" id="partOfTheBody" 	class="inputs 2 	closed" />
+	            <!--17--><input placeholder="Plural Noun #1" 		type="text" name="words" id="pluralNoun1" 		class="inputs 1 2 	closed" />
+	            <!--18--><input placeholder="Plural Noun #2" 		type="text" name="words" id="pluralNoun2" 		class="inputs 1 2 	closed" />
+	            <!--19--><input placeholder="Plural Noun #3" 		type="text" name="words" id="pluralNoun3" 		class="inputs 1 	closed" />
+	            <!--20--><input placeholder="Plural Noun #4" 		type="text" name="words" id="pluralNoun4" 		class="inputs 1 	closed" />
+	            <!--21--><input placeholder="Plural profession" 	type="text" name="words" id="pluralProfession" 	class="inputs 1 	closed" />
+	            <!--22--><input placeholder="Spanish word #1" 		type="text" name="words" id="spanishWord1" 		class="inputs 2 	closed" />
+	            <!--23--><input placeholder="Spanish word #2" 		type="text" name="words" id="spanishWord2" 		class="inputs 2 	closed" />
+	            <!--24--><input placeholder="Spanish word #3" 		type="text" name="words" id="spanishWord3" 		class="inputs 		closed" />
+
+	            <div>
+          	  		<input type="button" id="submitButton" class="button" value="Submit" />
+                </div>
+        	</div> <!-- #words end -->
+    	</form>
+
+<!-- fourth object -->
+<!-- story 1 -->
+    	<div id="scenarioAlbert" class="closed">
+    		<p>Albert Einstein, the son of
+    			<span id="aeMaleCelebrity">&nbsp;</span> and
+    			<span id="aeFemaleCelebrity">&nbsp;</span>, was born in Ulm, Germany, in 1879. In 1902, he had a job as assistant
+    			<span id="aeNoun1">&nbsp;</span> in the Swiss patent office and attended the University of Zurich. There he began studying atoms, molecules, and
+    			<span id="aePluralNoun1">&nbsp;</span>. He developed the theory of
+    			<span id="aeAdjective1">&nbsp;</span> relativity, which expanded the phenomena of sub-atomic
+    			<span id="aePluralNoun2">&nbsp;</span> and
+    		 	<span id="aeAdjective2">&nbsp;</span> magnetism. In 1921, he won the Nobel prize for
+    		 	<span id="aePluralNoun3">&nbsp;</span> and was director of theoretical physics at the Kaiser Wilhelm
+    		 	<span id="aeNoun2">&nbsp;</span> in Berlin. In 1933, when Hitler became Chancellor of
+    		 	<span id="aePlace">&nbsp;</span>, Einstein came to America to take a post at Princeton Institute for
+				<span id="aePluralNoun4">&nbsp;</span>, where his theories helped America devise the first atomic
+				<span id="aeNoun3">&nbsp;</span>. There is no question about it: Einstein was one of the most brilliant
+				<span id="aePluralProfession">&nbsp;</span> of our time.
+			</p>
+			<div id="endButton1"><input type="button" id="restartButton1" class="button" value="Try it again!" /></div>
+    	</div> <!-- #scenarioAlbert end -->
+
+<!-- story 2 -->
+    	<div id="scenarioBullFighting" class="closed">
+    		<p>Bullfighting is a
+    			<span id="bfAdjective1">&nbsp;</span> sport which is very popular in
+    			<span id="bfGeoLocation">&nbsp;</span>. A bullfighter is called a matador, and his equipment consists of a long, sharp
+    			<span id="bfNoun">&nbsp;</span> called a
+    			<span id="bfSpanishWord1">&nbsp;</span>, and a bright red
+    			<span id="bfArticleOfClothing1">&nbsp;</span>. He waves his
+    			<span id="bfArticleOfClothing2">&nbsp;</span> at the bull, which makes the bull
+    			<span id="bfEmotion">&nbsp;</span> and causes him to charge. The matador then goes through a series of
+    			<span id="bfMovement">&nbsp;</span> maneuvers to avoid getting caught on the bull's
+    			<span id="bfPartOfTheBody">&nbsp;</span>. If the matador kills the bull, the spectators yell,
+    			<span id="bfSpanishWord2">&nbsp;</span>!" and throw their
+    			<span id="bfPluralNoun1">&nbsp;</span> into the ring. If the bull wins, they yell
+    			<span id="bfExclamation">&nbsp;</span>!" and call for another matador. Bullfighting is a very
+    			<span id="bfAdjective2">&nbsp;</span> sport, but it will never be popular to America because Americans don't believe in cruelty to
+    			<span id="bfPluralNoun2">&nbsp;</span>.
+    		</p>
+    		<div id="endButton2"><input type="button" id="restartButton2" class="button" value="Try it again!" /></div>
+    	</div> <!-- #scenarioBullFighting end -->
+    </div> <!-- #wrapper end -->
+
+
+  	<script src="scripts.js"></script>
+    </body>
+</html>
+<!--       Coded by: Shawn Scott
+
+         /||||||||||||||||||\              /||||||||||||||||||\
+       /||||||||||||||||||||||\          /||||||||||||||||||||||\
+     /||||||||||||||||||||||||||\      /||||||||||||||||||||||||||\
+    ||||||||/            \||||||||    ||||||||/            \||||||||
+    ||||||||              ||||||||    ||||||||              ||||||||
+    |||||||\              ||||||/     |||||||\              ||||||/
+     \||||||\            /|||||/       \||||||\            /|||||/
+      \\\\\\\\                          \\\\\\\\
+       \\\\\\\\\                         \\\\\\\\\
+          \\\\\\\\\                         \\\\\\\\\
+             \\\\\\\\\                          \\\\\\\\\
+                 \\\\\\\\\                         \\\\\\\\\
+                   \\\\\\\\\                         \\\\\\\\\
+                      \\\\\\\\\                         \\\\\\\\\
+                         \\\\\\\\                         \\\\\\\\
+       /|||||/            \||||||\      /|||||/            \||||||\
+      /||||||              \|||||||    /||||||              \|||||||
+     ||||||||              ||||||||   ||||||||              ||||||||
+     ||||||||\            /||||||||   ||||||||\            /||||||||
+      \||||||||||||||||||||||||||/     \||||||||||||||||||||||||||/
+        \||||||||||||||||||||||/         \||||||||||||||||||||||/
+          \||||||||||||||||||/             \||||||||||||||||||/
+-->
